@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using ACTBossRespawner.Extensions;
+using HarmonyLib;
 using UnityEngine;
 
 namespace ACTBossRespawner.Patches
@@ -35,6 +36,28 @@ namespace ACTBossRespawner.Patches
             {
                 Plugin.CustomLogger.LogInfo($"Player pos : {Player.singlePlayer.transform.position}");
             }
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch("OnBossKilled")]
+        private static void OnBossKilled(Player __instance)
+        {
+            if (Plugin.HasModifedStats)
+            {
+                Plugin.CustomLogger.LogInfo("Boss killed, restoring stats...");
+                var backup = SaveData.instance.LoadFromFile(BackupInfo.BackupPath);
+
+                CrabFile.current.inventoryData["Level_VIT"].amount = backup.inventoryData["Level_VIT"].amount;
+                CrabFile.current.inventoryData["Level_ATK"].amount = backup.inventoryData["Level_ATK"].amount;
+                CrabFile.current.inventoryData["Level_RES"].amount = backup.inventoryData["Level_RES"].amount;
+                CrabFile.current.inventoryData["Level_MSG"].amount = backup.inventoryData["Level_MSG"].amount;
+
+                Plugin.HasModifedStats = false;
+
+                __instance.ResetStats();
+            }
+
+            Plugin.RespawnContext.ActiveBossName = string.Empty;
         }
 
 

@@ -31,7 +31,7 @@ A mod (steam version) for the game `another crab's treasure` ,for re fighting ma
 It fairly easy to install this mod:
 
 1. Install [BepInEx](https://github.com/BepInEx/BepInEx/releases) to your game. You can follow this [guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html) for help .
-2. Run the game once (to like at least to tilte screen) and confirm that you have the file at `{your game directory location}/BepInEx/LogOutput.txt` . This is for confirming that BepInEx is correctly installed
+2. Run the game once (to like at least to title screen) and confirm that you have the file at `{your game directory location}/BepInEx/LogOutput.txt` . This is for confirming that BepInEx is correctly installed
 3. Download the latest mod [release](https://github.com/Fcornaire/ACTBR/releases)
 4. Install the mod by copying the mod to `{your game directory location}/BepInEx/plugins` (meaning you now should have `{your game directory location}/BepInEx/plugins/ACTBossesRespawner.dll` )
 
@@ -56,6 +56,7 @@ Also the mod offer 2 other features that cab be activated by hotkey:
 # Known bugs
 
 - Out of place environnement music
+- Losing adaptation -> dunno why it's happenning but you can "fix" this by just reloading the game (Going to the title screen and reload your save)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

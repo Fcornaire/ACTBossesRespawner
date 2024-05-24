@@ -37,6 +37,12 @@
 			<Private>false</Private>
 			<Publicize>true</Publicize>
 		</Reference>
+
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(ManagedPath)/Newtonsoft.Json.dll</HintPath>
+			<Private>false</Private>
+			<Publicize>true</Publicize>
+		</Reference>
 		
 	</ItemGroup>
 
