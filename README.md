@@ -33,7 +33,7 @@ It fairly easy to install this mod:
 1. Install [BepInEx](https://github.com/BepInEx/BepInEx/releases) to your game. You can follow this [guide](https://docs.bepinex.dev/articles/user_guide/installation/index.html) for help .
 2. Run the game once (to like at least to title screen) and confirm that you have the file at `{your game directory location}/BepInEx/LogOutput.txt` . This is for confirming that BepInEx is correctly installed
 3. Download the latest mod [release](https://github.com/Fcornaire/ACTBR/releases)
-4. Install the mod by copying the mod to `{your game directory location}/BepInEx/plugins` (meaning you now should have `{your game directory location}/BepInEx/plugins/ACTBossesRespawner.dll` )
+4. Install the mod by copying the mod to `{your game directory location}/BepInEx/plugins` (meaning you now should have `{your game directory location}/BepInEx/plugins/ACTBossesRespawner/ACTBossesRespawner.dll` )
 
 If all done correctly, when entering the pause menu and navigating the menu tabs, you should be able to see the respawn tab.
 
@@ -43,13 +43,30 @@ If all done correctly, when entering the pause menu and navigating the menu tabs
 
 Select a boss to be teleported to the boss location and start the fight !
 
-You might be too strong for the boss depending of your level, it's advised to re balance a bit at least your attack stat.
-
 Depending of the boss, it also advised to finish all related next event (dialogue, re acquiring power up, etc) related to the boss before going to another boss. You might get some unexpected behaviour if not.
 
-Also the mod offer 2 other features that cab be activated by hotkey:
+# Features
 
-- F5: Restore your initial save data. The mod will backup your original save data the first time you try to re load a boss. This is another backup just in case that will be located at `{your disk}:\Users\{your windows user name}\AppData\LocalLow\Aggro Crab\AnotherCrabsTreasure/BackupByModBossesRespawner`. F5 to restore that save (nothing will happen if you didn't re load a boss yet since the backup happen the first re load). Again , ⚠️ Backup your save data ⚠️ to be safe , you have been warned (to be fair, i don't think you can corrupt your save data that easily but you never know...)
+Beside the re spawn, the mod offer :
+
+- Ability to force a rebalance on kril. To do so:
+
+  1. Create a folder name `modifier` in the mod directory (it should look like `{your game directory location}/BepInEx/plugins/ACTBossesRespawner/modifier`)
+  2. In the created `modifier` directory, add a new text file named something like `stats.json` (yeah, force the extension change if windows ask)
+  3. `stats.json` need to look like
+
+  ```json
+  {
+    "ATK": 5,
+    "VIT": 5,
+    "GMS": 5,
+    "RES": 5
+  }
+  ```
+
+  with each stat being the leveled stat you will overwrite 4. Now each time you will re load a boss, those stats will be applied at the start of the fight and will be removed at the end. Delete the file `stats.json` when you are done.
+
+- F5: Restore your initial save data. The mod will backup your original save data the first time you try to re load a boss. This is another backup just in case that will be located at `{your disk}:\Users\{your windows user name}\AppData\LocalLow\Aggro Crab\AnotherCrabsTreasure/BackupByModBossesRespawner`. F5 to restore that save (nothing will happen if you didn't re load a boss yet since the backup happen the first re load). Do not hesitate to use that feature if you want a quick original save restore. Again , ⚠️ Backup your save data ⚠️ to be safe , you have been warned (to be fair, i don't think you can corrupt your save data that easily but you never know...)
 
 - F6: Toggle the dev debug mode, open the pause menu and navigate throught the tabs to see the debup tab . You will acces debug feature. (You don't need that by the way, i mostly use the `warp to shell` feature and was lazy enough to remove the feature properly)
 
