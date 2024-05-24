@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>ACTBossesRespawner</AssemblyName>
+    <Description>My first plugin</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<ManagedPath>$(ACTPath)/AnotherCrabsTreasure_Data/Managed</ManagedPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(ManagedPath)/Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+			<Publicize>true</Publicize>
+		</Reference>
+
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(ManagedPath)/UnityEngine.UI.dll</HintPath>
+			<Private>false</Private>
+			<Publicize>true</Publicize>
+		</Reference>
+
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>$(ManagedPath)/Unity.TextMeshPro.dll</HintPath>
+			<Private>false</Private>
+			<Publicize>true</Publicize>
+		</Reference>
+
+		<Reference Include="FMODUnity">
+			<HintPath>$(ManagedPath)/FMODUnity.dll</HintPath>
+			<Private>false</Private>
+			<Publicize>true</Publicize>
+		</Reference>
+		
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="2020.3.48" IncludeAssets="compile" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy /Y /I &quot;$(TargetDir)&quot; &quot;$(ACTPath)/BepInEx/plugins/ACTBossesRespawner&quot;" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))'" />
+		<!--<Exec Command="xcopy /Y /I &quot;$(TargetDir)&quot; &quot;$(ACTPath)/BepInEx/scripts&quot;" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))'" />-->
+
+	</Target>
+</Project>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACTBossRespawner", "src/ACTBossRespawner.csproj", "{A7471074-3A30-4209-8F7D-EF81AFEF232D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0625F145-65A5-4733-B230-38630E6A2F92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7471074-3A30-4209-8F7D-EF81AFEF232D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7471074-3A30-4209-8F7D-EF81AFEF232D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7471074-3A30-4209-8F7D-EF81AFEF232D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7471074-3A30-4209-8F7D-EF81AFEF232D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7471074-3A30-4209-8F7D-EF81AFEF232D} = {0625F145-65A5-4733-B230-38630E6A2F92}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB35A362-0D9D-41D0-910B-4D41B88C360F}
+	EndGlobalSection
+EndGlobal
