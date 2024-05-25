@@ -80,15 +80,15 @@ Beside the re spawn, the mod offer :
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Fcornaire/ACTBR.svg?style=for-the-badge
-[contributors-url]: https://github.com/Fcornaire/ACTBR/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Fcornaire/ACTBR.svg?style=for-the-badge
-[forks-url]: https://github.com/Fcornaire/ACTBR/network/members
-[stars-shield]: https://img.shields.io/github/stars/Fcornaire/ACTBR.svg?style=for-the-badge
-[stars-url]: https://github.com/Fcornaire/ACTBR/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Fcornaire/ACTBR.svg?style=for-the-badge
-[issues-url]: https://github.com/Fcornaire/ACTBR/issues
-[license-shield]: https://img.shields.io/github/license/Fcornaire/ACTBR.svg?style=for-the-badge
-[download-shield]: https://img.shields.io/github/downloads/Fcornaire/ACTBR/total?style=for-the-badge
-[download-url]: https://github.com/Fcornaire/ACTBR/releases
-[license-url]: https://github.com/Fcornaire/ACTBR/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Fcornaire/ACTBossesRespawner.svg?style=for-the-badge
+[contributors-url]: https://github.com/Fcornaire/ACTBossesRespawner/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Fcornaire/ACTBossesRespawner.svg?style=for-the-badge
+[forks-url]: https://github.com/Fcornaire/ACTBossesRespawner/network/members
+[stars-shield]: https://img.shields.io/github/stars/Fcornaire/ACTBossesRespawner.svg?style=for-the-badge
+[stars-url]: https://github.com/Fcornaire/ACTBossesRespawner/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Fcornaire/ACTBossesRespawner.svg?style=for-the-badge
+[issues-url]: https://github.com/Fcornaire/ACTBossesRespawner/issues
+[license-shield]: https://img.shields.io/github/license/Fcornaire/ACTBossesRespawner.svg?style=for-the-badge
+[download-shield]: https://img.shields.io/github/downloads/Fcornaire/ACTBossesRespawner/total?style=for-the-badge
+[download-url]: https://github.com/Fcornaire/ACTBossesRespawner/releases
+[license-url]: https://github.com/Fcornaire/ACTBossesRespawner/blob/master/LICENSE.txt
