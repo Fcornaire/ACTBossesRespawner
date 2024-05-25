@@ -92,6 +92,12 @@ namespace ACTBossRespawner
 
         public static void UpdateStatsIfNeeded()
         {
+            if (!Directory.Exists(Plugin.StatsModifierPath))
+            {
+                Plugin.CustomLogger.LogWarning("modifier directory not found, stats will not be modified");
+                return;
+            }
+
             var jsonFiles = Directory.GetFiles(Plugin.StatsModifierPath, "*.json", SearchOption.TopDirectoryOnly);
 
             if (jsonFiles.Length == 0)
