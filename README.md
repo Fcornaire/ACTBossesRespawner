@@ -64,7 +64,9 @@ Beside the re spawn, the mod offer :
   }
   ```
 
-  with each stat being the leveled stat you will overwrite 4. Now each time you will re load a boss, those stats will be applied at the start of the fight and will be removed at the end. Delete the file `stats.json` when you are done.
+  with each stat being the leveled stat you will overwrite
+
+  4. Now each time you will re load a boss, those stats will be applied at the start of the fight and will be removed at the end. Delete the file `stats.json` when you are done.
 
 - F5: Restore your initial save data. The mod will backup your original save data the first time you try to re load a boss. This is another backup just in case that will be located at `{your disk}:\Users\{your windows user name}\AppData\LocalLow\Aggro Crab\AnotherCrabsTreasure/BackupByModBossesRespawner`. F5 to restore that save (nothing will happen if you didn't re load a boss yet since the backup happen the first re load). Do not hesitate to use that feature if you want a quick original save restore. Again , ⚠️ Backup your save data ⚠️ to be safe , you have been warned (to be fair, i don't think you can corrupt your save data that easily but you never know...)
 
