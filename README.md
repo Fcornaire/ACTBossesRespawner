@@ -13,6 +13,9 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+# Note
+The year of the crab update added an option to re fight previous bosses, the mod is useless unless playing an older version of the game
+
 <!-- ABOUT THE PROJECT -->
 
 # About The Project
